@@ -38,6 +38,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    font-weight: 500;
 }
 
 .title ul li {
@@ -78,7 +79,7 @@ nav {
 }
 
 .logos ul img {
-    height: 40px;
+    height: 25px;
     transition: 0.5s;
 }
 
@@ -488,6 +489,13 @@ nav {
 
 /* For screens smaller than 768px (Mobile Phones) */
 @media (max-width: 768px) {
+    nav{
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .title ul {
         gap: 15px;
         font-size: small;
@@ -521,8 +529,13 @@ nav {
         gap: 15px;
     }
 
-    .logos ul {
+    .logos ul{
         display: none;
+    }
+
+    .logos ul img{
+        height: 20px;
+        /* display: none; */
     }
 
     .skill-card {
