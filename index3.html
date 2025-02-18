@@ -4,14 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Muhammad Haroon Nawaz">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style2.css">
+  <link rel="shortcut icon" href="university.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style3.css">
 </head>
 
 <body>
   <div id="up"></div>
   <header>
     <nav id="nav">
+      <a class="portfolio" href="#up">
+        <H3>Portfolio</H3>
+      </a>
       <div class="title">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -21,21 +26,19 @@
           <li><a href="#experience">Experience</a></li>
         </ul>
       </div>
-      <div class="logos">
-        <ul>
-          <img src="facebook-icon.svg" alt="facebook">
-          <img src="instagram-icon.svg" alt="instagram">
-          <img src="whatsapp-icon.svg" alt="whatsapp">
-        </ul>
-      </div>
     </nav>
   </header>
   <section class="main" id="home">
     <div class="text">
       <h1>Muhammad Haroon Nawaz</h1>
-      <div class="about-detail">As a passionate web developer, I craft innovative digital experiences that drive
-        results. With expertise in
-        HTML, CSS, JavaScript, and more, I deliver high-quality solutions that exceed expectations</div>
+      <div class="about-detail"></div>
+      <div class="logos">
+        <ul>
+          <img title="Whatsapp" class="whatsapp" onclick="whatsapp" src="whatsapp-icon.svg" alt="whatsapp">
+          <img title="Github" class="github" onclick="github_profile" src="github-icon.svg" alt="github">
+          <img title="Facebook" class="facebook" onclick="facebook_profile" src="facebook-icon.svg" alt="facebook">
+        </ul>
+      </div>
       <button class="btn">Let's get started</button>
     </div>
     <div class="pic">
@@ -117,8 +120,8 @@
           with a clean and modern interface. It includes a navigation bar, featured content section. JavaScript is
           used to create Content Dynamically; it's a pure static clone that showcases HTML, CSS and JavaScript
           skills.</p>
-        <button class="project-link btn">GitHub Repo</button>
-        <button class="project-link btn">live Demo</button>
+        <button class="project-link btn" onclick="git_youtube">GitHub Repo</button>
+        <!-- <button class="project-link btn">live Demo</button> -->
       </div>
       <div class="project-info project-card card">
         <h3 class="project-title">Netflix clone</h3>
@@ -128,8 +131,8 @@
           design to work
           seamlessly across devices. No JavaScript is used; it's a pure static clone that showcases HTML and CSS
           skills.</p>
-        <button class="project-link btn">GitHub Repo</button>
-        <button class="project-link btn">live Demo</button>
+        <button class="project-link btn" onclick="git_netflix">GitHub Repo</button>
+        <!-- <button class="project-link btn">live Demo</button> -->
       </div>
       <div class="project-info project-card card">
         <h3 class="project-title">Login form</h3>
@@ -139,8 +142,8 @@
 
           The form can be easily customized with additional features like validation, animations, or dark mode to
           enhance functionality and aesthetics.</p>
-        <button class="project-link btn">GitHub Repo</button>
-        <button class="project-link btn">live Demo</button>
+        <button class="project-link btn" onclick="git_login">GitHub Repo</button>
+        <!-- <button class="project-link btn">live Demo</button> -->
       </div>
       <div class="project-info project-card card">
         <h3 class="project-title">To-do list app</h3>
@@ -151,8 +154,8 @@
           This project demonstrates the ability to handle basic input/output operations and logic control in C++.
         </p>
         </p>
-        <button class="project-link btn">GitHub Repo</button>
-        <button class="project-link btn">live Demo</button>
+        <button class="project-link btn" onclick="git_to_do">GitHub Repo</button>
+        <!-- <button class="project-link btn">live Demo</button> -->
       </div>
       <div class="project-info project-card card">
         <h3 class="project-title">Sweet Tooth Bakery Website</h3>
@@ -163,8 +166,8 @@
           bakery's story, and get in touch.
         </p>
         </p>
-        <button class="project-link btn">GitHub Repo</button>
-        <button class="project-link btn">live Demo</button>
+        <button class="project-link btn" onclick="git_bakery">GitHub Repo</button>
+        <!-- <button class="project-link btn">live Demo</button> -->
       </div>
     </div>
   </section>
@@ -207,6 +210,31 @@
         upButton.style.transform = "translateY(20px)";
         upButton.style.pointerEvents = "none";
       }
+    });
+
+    document.querySelector(".github[onclick='github_profile']").addEventListener("click", function () {
+      window.open("https://github.com/haroon-90");
+    });
+    document.querySelector(".whatsapp[onclick='whatsapp']").addEventListener("click", function () {
+      window.open("https://wa.me/923009530640?text=Hello!");
+    });
+    document.querySelector(".facebook[onclick='facebook_profile']").addEventListener("click", function () {
+      window.open("https://web.facebook.com/haroon.nawaz.144734");
+    });
+    document.querySelector(".project-link.btn[onclick='git_youtube']").addEventListener("click", function () {
+      window.open("https://github.com/haroon-90/Youtube-clone");
+    });
+    document.querySelector(".project-link.btn[onclick='git_netflix']").addEventListener("click", function () {
+      window.open("https://github.com/haroon-90/Netflix-clone");
+    });
+    document.querySelector(".project-link.btn[onclick='git_login']").addEventListener("click", function () {
+      window.open("https://github.com/haroon-90/Sign-up-login-page");
+    });
+    document.querySelector(".project-link.btn[onclick='git_to_do']").addEventListener("click", function () {
+      window.open("https://github.com/haroon-90/To-Do-list");
+    });
+    document.querySelector(".project-link.btn[onclick='git_bakery']").addEventListener("click", function () {
+      window.open("https://github.com/haroon-90/Sweet-Tooth-Bakery");
     });
 
     document.querySelector(".btn").addEventListener("click", function () {
