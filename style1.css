@@ -38,6 +38,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    font-weight: 500;
 }
 
 .title ul li {
@@ -78,8 +79,9 @@ nav {
 }
 
 .logos ul img {
-    height: 40px;
+    height: 25px;
     transition: 0.5s;
+    /* filter: invert(1); */
 }
 
 .logos ul img:hover {
@@ -257,24 +259,24 @@ nav {
     border-radius: 5px;
 }
 
-.skills {
+.skills, .experience {
     padding: 40px;
     text-align: center;
 }
 
-.section-title {
+.section-title, .experiences-title {
     font-size: 2em;
     margin-bottom: 30px;
 }
 
-.skill-cards {
+.skill-cards, .experience-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.skill-card {
+.skill-card, .experience-card {
     background-color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
@@ -282,10 +284,14 @@ nav {
     text-align: center;
 }
 
-.skill-name {
+.skill-name, .experience-title {
     color: black;
     font-size: 1.2em;
     margin-bottom: 10px;
+}
+
+.experience-description{
+    color: grey;
 }
 
 .skill-progress {
@@ -443,7 +449,7 @@ nav {
     }
 
     .cards {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
@@ -473,7 +479,7 @@ nav {
     }
 
     .cards {
-        flex-direction: column;
+        flex-direction: row;
         gap: 20px;
     }
 
@@ -484,8 +490,16 @@ nav {
 
 /* For screens smaller than 768px (Mobile Phones) */
 @media (max-width: 768px) {
+    nav{
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .title ul {
         gap: 15px;
+        font-size: small;
     }
 
     .main {
@@ -516,8 +530,13 @@ nav {
         gap: 15px;
     }
 
-    .logos ul {
+    .logos ul{
         display: none;
+    }
+
+    .logos ul img{
+        height: 20px;
+        /* display: none; */
     }
 
     .skill-card {
