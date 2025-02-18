@@ -87,7 +87,6 @@ nav {
 }
 
 .logos ul img {
-    /* filter: grayscale(100%); */
     transition: 0.4s ease-in-out;
     height: 25px;
     transition: 0.5s;
@@ -98,15 +97,15 @@ nav {
 }
 
 .logos ul img.whatsapp:hover {
-    filter: grayscale(0%) invert(55%) sepia(80%) saturate(600%) hue-rotate(90deg) brightness(100%) contrast(110%) drop-shadow(0 0 8px #25D366);
+    filter: drop-shadow(0 0 8px #25D366);
 }
 
 .logos ul img.github:hover {
-    filter: grayscale(0%) invert(40%) sepia(80%) saturate(500%) hue-rotate(250deg) brightness(90%) contrast(120%) drop-shadow(0 0 8px #ffffff);
+    filter: drop-shadow(0 0 8px #ffffff);
 }
 
 .logos ul img.facebook:hover {
-    filter: grayscale(0%) invert(32%) sepia(80%) saturate(500%) hue-rotate(200deg) brightness(105%) contrast(120%) drop-shadow(0 0 10px #1877F2);
+    filter: drop-shadow(0 0 10px #1877F2);
 }
 
 .main {
