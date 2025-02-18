@@ -81,6 +81,7 @@ nav {
 .logos ul img {
     height: 25px;
     transition: 0.5s;
+    /* filter: invert(1); */
 }
 
 .logos ul img:hover {
