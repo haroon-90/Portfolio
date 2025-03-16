@@ -400,8 +400,8 @@ nav {
 .card .position {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #2c3e50;
-    background: #ecf0f1;
+    color: white;
+    background: var(--secondary-color);
     padding: 5px 10px;
     border-radius: 5px;
 }
