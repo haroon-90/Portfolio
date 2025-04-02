@@ -7,7 +7,7 @@
     <meta name="description" content="Portfolio of Muhammad Haroon Nawaz">
     <title>Portfolio</title>
     <link rel="shortcut icon" href="university.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style7.css">
+    <link rel="stylesheet" href="style8.css">
 </head>
 
 <body>
@@ -29,22 +29,29 @@
             </div>
             <div class="theme-picker">
                 <div class="color-options">
-                    <input type="radio" name="theme" id="color1" value="#ff0000" onclick="document.documentElement.style.setProperty('--primary-color', this.value)">
+                    <input type="radio" name="theme" id="color1" value="#ff0000"
+                        onclick="document.documentElement.style.setProperty('--primary-color', this.value)">
                     <label for="color1" style="background-color: #ff0000;"></label>
-                    
-                    <input type="radio" name="theme" id="color3" value="#00ff00" onclick="document.documentElement.style.setProperty('--primary-color', this.value)">
+
+                    <input type="radio" name="theme" id="color3" value="#00ff00"
+                        onclick="document.documentElement.style.setProperty('--primary-color', this.value)">
                     <label for="color3" style="background-color: #00ff00;"></label>
-                    
-                    <input type="radio" name="theme" id="color2" value="#0000ff" onclick="document.documentElement.style.setProperty('--primary-color', this.value)">
+
+                    <input type="radio" name="theme" id="color2" value="#0000ff"
+                        onclick="document.documentElement.style.setProperty('--primary-color', this.value)">
                     <label for="color2" style="background-color: #0000ff;"></label>
-                    
-                    <input type="radio" name="theme" id="color4" value="#ffe100" onclick="document.documentElement.style.setProperty('--primary-color', this.value)">
+
+                    <input type="radio" name="theme" id="color4" value="#ffe100"
+                        onclick="document.documentElement.style.setProperty('--primary-color', this.value)">
                     <label for="color4" style="background-color: #ffe100;"></label>
                 </div>
             </div>
         </nav>
     </header>
     <section class="main" id="home">
+        <!-- <div class="main_bg">
+            <img src="react.svg" alt="react_logo" class="react">
+        </div> -->
         <div class="text">
             <h4><b>Hello, i'm</b></h4>
             <h1>Muhammad Haroon Nawaz</h1>
@@ -111,6 +118,10 @@
                 <progress class="skill-progress" value="55" max="100"></progress>
             </div>
             <div class="skill-card card">
+                <h3 class="skill-name">React</h3>
+                <progress class="skill-progress" value="55" max="100"></progress>
+            </div>
+            <div class="skill-card card">
                 <h3 class="skill-name">Python</h3>
                 <progress class="skill-progress" value="70" max="100"></progress>
             </div>
@@ -173,12 +184,11 @@
             </div>
             <div class="project-info project-card card">
                 <h3 class="project-title">To-do list app</h3>
-                <p class="project-description">A command-line To-Do List application developed in C++. The app allows
-                    users to add, view, delete, and update tasks.
-                    It uses basic C++ features like arrays, loops, and functions. The user interacts with the program
-                    via a simple text-based interface.
-                    This project demonstrates the ability to handle basic input/output operations and logic control in
-                    C++.
+                <p class="project-description">A To-Do List Web application developed in React. The app allows
+                    users to add, manage, and track their daily tasks efficiently. Features include adding new tasks,
+                    marking them as complete, editing task details, and removing completed items. The app uses local
+                    storage to persist data, ensuring tasks remain saved between sessions. Built with React's
+                    component-based architecture for optimal performance and user experience.
                 </p>
                 </p>
                 <button class="project-link btn" onclick="git_to_do">GitHub Repo</button>
@@ -229,7 +239,8 @@
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message here... We would love to hear from you!" required></textarea>
+                <textarea id="message" name="message" rows="5"
+                    placeholder="Write your message here... We would love to hear from you!" required></textarea>
             </div>
             <button type="submit" class="btn">Send Message</button>
         </form>
@@ -284,7 +295,7 @@
             window.open("https://github.com/haroon-90/Sign-up-login-page");
         });
         document.querySelector(".project-link.btn[onclick='git_to_do']").addEventListener("click", function () {
-            window.open("https://github.com/haroon-90/To-Do-list");
+            window.open("https://github.com/haroon-90/To-Do-React");
         });
         document.querySelector(".project-link.btn[onclick='git_bakery']").addEventListener("click", function () {
             window.open("https://github.com/haroon-90/Sweet-Tooth-Bakery");
@@ -329,7 +340,7 @@
         typeEffect();
 
         document.querySelectorAll('input[name="theme"]').forEach(input => {
-            input.addEventListener('change', function() {
+            input.addEventListener('change', function () {
                 document.documentElement.style.setProperty('--secondary-color', this.value);
             });
         });
