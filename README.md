@@ -47,7 +47,7 @@ Here are some of the featured projects in my portfolio:
 
 🔑 **Login Form** – A simple and responsive login page
 
-📋 **To-Do List App** – A command-line to-do list in C++
+📋 **To-Do List App** –A to-do list web App
 
 🍰 **Sweet Tooth Bakery** – A bakery website showcasing delicious offerings
 

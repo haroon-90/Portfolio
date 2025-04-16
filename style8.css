@@ -137,6 +137,7 @@ header {
 nav {
     width: 80vw;
     background-color: white;
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -156,6 +157,7 @@ nav {
 .portfolio h3 {
     color: var(--secondary-color);
     cursor: pointer;
+    text-decoration: none;
     animation: breathe ease-in-out 3s infinite;
 }
 
