@@ -38,20 +38,6 @@ cd portfolio
 
 # Open index.html in your browser or start a local server
 ```
-# 📌 My Projects
-Here are some of the featured projects in my portfolio:
-
-🎬 **YouTube Clone** – A static replica of the YouTube homepage
-
-📺 **Netflix Clone** – A visually appealing Netflix homepage clone
-
-🔑 **Login Form** – A simple and responsive login page
-
-📋 **To-Do List App** –A to-do list web App
-
-🍰 **Sweet Tooth Bakery** – A bakery website showcasing delicious offerings
-
----
 
 # 📬 Contact
 
